@@ -1,0 +1,71 @@
+23:13:33  Namespace(maxsize=8, mealy=False, minsize=1, moore=False, spec='../../benchmarks/realizable_from_acacia+/LoadBalancing/load-balancing-environment/load_4c_comp.ltl', verbose=0)
+23:13:33  Ltl2UCW: converting:
+(!((G((F((idle=1)))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1))))))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((grant1=1))) + (request1=1))))))
+23:13:33  Ltl2UCW: converting:
+(!((!((F((G(((request1=1) * (!((grant1=1))))))))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((grant0=1))) + (request0=1))))))
+23:13:33  Ltl2UCW: converting:
+(!((!((F((G(((request0=1) * (!((grant0=1))))))))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((grant2=1))) + (request2=1))))))
+23:13:33  Ltl2UCW: converting:
+(!((!((F((G(((request2=1) * (!((grant2=1))))))))))))
+23:13:33  Ltl2UCW: converting:
+(!((!((F((G(((request3=1) * (!((grant3=1))))))))))))
+23:13:33  Ltl2UCW: converting:
+(!((G(((!((grant3=1))) + (request3=1))))))
+23:13:34  Ltl2UCW: converting:
+(!((G((((((((((((((!((grant0=1))) + (!((grant1=1)))) * ((!((grant0=1))) + (!((grant2=1))))) * ((!((grant0=1))) + (!((grant3=1))))) * ((!((grant1=1))) + (!((grant0=1))))) * ((!((grant1=1))) + (!((grant2=1))))) * ((!((grant1=1))) + (!((grant3=1))))) * ((!((grant2=1))) + (!((grant0=1))))) * ((!((grant2=1))) + (!((grant1=1))))) * ((!((grant2=1))) + (!((grant3=1))))) * ((!((grant3=1))) + (!((grant0=1))))) * ((!((grant3=1))) + (!((grant1=1))))) * ((!((grant3=1))) + (!((grant2=1)))))))))
+23:13:34  Ltl2UCW: converting:
+(!((G(((!((request0=1))) + (!((grant1=1))))))))
+23:13:34  Ltl2UCW: converting:
+(!((G(((!((request0=1))) + (!((grant3=1))))))))
+23:13:34  Ltl2UCW: converting:
+(!((G((((((!((grant0=1))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))) + (idle=1))))))
+23:13:34  Ltl2UCW: converting:
+(!((G(((!((request0=1))) + (!((grant2=1))))))))
+23:13:34  LTL is:
+!(True) + True * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1))) + G(!(grant1=1) + request1=1) * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1)) * G(F(idle=1)) * G(!(grant0=1) + X(!(request0=1) * !(idle=1) U !(request0=1) * idle=1))) + !(F(G(request1=1 * !(grant1=1)))) * !(True) + True * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1))) + G(!(grant0=1) + request0=1) * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1)) * G(F(idle=1)) * G(!(grant0=1) + X(!(request0=1) * !(idle=1) U !(request0=1) * idle=1))) + !(F(G(request0=1 * !(grant0=1)))) * !(True) + True * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1))) + G(!(grant2=1) + request2=1) * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1)) * G(F(idle=1)) * G(!(grant0=1) + X(!(request0=1) * !(idle=1) U !(request0=1) * idle=1))) + !(F(G(request2=1 * !(grant2=1)))) * !(True) + True * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1))) + G(!(grant3=1) + request3=1) * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1)) * G(F(idle=1)) * G(!(grant0=1) + X(!(request0=1) * !(idle=1) U !(request0=1) * idle=1))) + !(F(G(request3=1 * !(grant3=1)))) * !(True) + True * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1))) + G(!(grant0=1) + !(grant1=1) * !(grant0=1) + !(grant2=1) * !(grant0=1) + !(grant3=1) * !(grant1=1) + !(grant0=1) * !(grant1=1) + !(grant2=1) * !(grant1=1) + !(grant3=1) * !(grant2=1) + !(grant0=1) * !(grant2=1) + !(grant1=1) * !(grant2=1) + !(grant3=1) * !(grant3=1) + !(grant0=1) * !(grant3=1) + !(grant1=1) * !(grant3=1) + !(grant2=1)) * G(!(request0=1) + !(grant1=1)) * G(!(request0=1) + !(grant3=1)) * G(!(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1) + idle=1) * G(!(request0=1) + !(grant2=1)) * !(True * G(!(idle=1 * !(grant0=1) * !(grant1=1) * !(grant2=1) * !(grant3=1)) + X(idle=1)) * G(F(idle=1)) * G(!(grant0=1) + X(!(request0=1) * !(idle=1) U !(request0=1) * idle=1))) + True
+23:13:34  Ltl2UCW: converting:
+(!(((((((((!(TRUE)) + TRUE) * ((!((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))) + (G(((!((grant1=1))) + (request1=1)))))) * ((!(((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))) * ((G((F((idle=1))))) * (G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1)))))))))))) + (!((F((G(((request1=1) * (!((grant1=1)))))))))))) * ((((!(TRUE)) + TRUE) * ((!((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))) + (G(((!((grant0=1))) + (request0=1)))))) * ((!(((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))) * ((G((F((idle=1))))) * (G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1)))))))))))) + (!((F((G(((request0=1) * (!((grant0=1))))))))))))) * ((((!(TRUE)) + TRUE) * ((!((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))) + (G(((!((grant2=1))) + (request2=1)))))) * ((!(((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))) * ((G((F((idle=1))))) * (G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1)))))))))))) + (!((F((G(((request2=1) * (!((grant2=1))))))))))))) * ((((!(TRUE)) + TRUE) * ((!((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))) + (G(((!((grant3=1))) + (request3=1)))))) * ((!(((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))) * ((G((F((idle=1))))) * (G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1)))))))))))) + (!((F((G(((request3=1) * (!((grant3=1))))))))))))) * ((((!(TRUE)) + TRUE) * ((!((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))))) + (((((G((((((((((((((!((grant0=1))) + (!((grant1=1)))) * ((!((grant0=1))) + (!((grant2=1))))) * ((!((grant0=1))) + (!((grant3=1))))) * ((!((grant1=1))) + (!((grant0=1))))) * ((!((grant1=1))) + (!((grant2=1))))) * ((!((grant1=1))) + (!((grant3=1))))) * ((!((grant2=1))) + (!((grant0=1))))) * ((!((grant2=1))) + (!((grant1=1))))) * ((!((grant2=1))) + (!((grant3=1))))) * ((!((grant3=1))) + (!((grant0=1))))) * ((!((grant3=1))) + (!((grant1=1))))) * ((!((grant3=1))) + (!((grant2=1))))))) * (G(((!((request0=1))) + (!((grant1=1))))))) * (G(((!((request0=1))) + (!((grant3=1))))))) * (G((((((!((grant0=1))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))) + (idle=1))))) * (G(((!((request0=1))) + (!((grant2=1))))))))) * ((!(((TRUE * (G(((!((((((idle=1) * (!((grant0=1)))) * (!((grant1=1)))) * (!((grant2=1)))) * (!((grant3=1)))))) + (X((idle=1))))))) * ((G((F((idle=1))))) * (G(((!((grant0=1))) + (X((((!((request0=1))) * (!((idle=1)))) U ((!((request0=1))) * (idle=1)))))))))))) + TRUE)))))
+23:13:34  search
+23:13:34  searching a model of size 1..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_1.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_1.smt2
+23:13:34  searching a model of size 2..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_2.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_2.smt2
+23:13:34  searching a model of size 3..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_3.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_3.smt2
+23:13:34  searching a model of size 4..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_4.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_4.smt2
+23:13:34  searching a model of size 5..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_5.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_5.smt2
+23:13:34  searching a model of size 6..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_6.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_6.smt2
+23:13:34  searching a model of size 7..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_7.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_7.smt2
+23:13:34  searching a model of size 8..
+23:13:34  solve
+23:13:34  copying /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8.smt2 into /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_8.smt2
+23:13:34  /home/ayrat/projects/party-elli/src/load-balancer-mealy-4/tmpbcmg3nu8_8.smt2
+23:13:34  unrealizable
